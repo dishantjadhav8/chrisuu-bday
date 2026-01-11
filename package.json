@@ -1,0 +1,21 @@
+{
+  "name": "birthday-celebration",
+  "version": "1.0.0",
+  "description": "Birthday celebration website with Vercel backend",
+  "main": "index.html",
+  "type": "module",
+  "scripts": {
+    "dev": "vercel dev",
+    "build": "echo 'Build complete'",
+    "start": "vercel dev"
+  },
+  "keywords": ["birthday", "celebration", "vercel"],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@vercel/kv": "^1.0.1"
+  },
+  "devDependencies": {
+    "vercel": "^33.0.0"
+  }
+}

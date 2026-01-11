@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🎉 Happy Birthday Celebration 🎂</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One:wght@400&family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body style="background-image:url('/Pink\ Purple\ Star\ Happy\ Birthday.png') ;">
+    <!-- Animated Background Elements -->
+    <div class="background-animation">
+        <div class="floating-balloons">
+            <div class="balloon balloon-1">🎈</div>
+            <div class="balloon balloon-2">🎈</div>
+            <div class="balloon balloon-3">🎈</div>
+            <div class="balloon balloon-4">🎈</div>
+            <div class="balloon balloon-5">🎈</div>
+        </div>
+        <div class="confetti-container" id="confettiContainer"></div>
+        <div class="particles" id="particles"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">🎂 Birthday Bash</div>
+            <div class="nav-toggle" id="navToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#gallery" class="nav-link">Gallery</a></li>
+                <li><a href="#music" class="nav-link">Music</a></li>
+                <li><a href="#wishes" class="nav-link">Wishes</a></li>
+                <li><a href="#countdown" class="nav-link">Countdown</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title animate-bounce">Happy Birthday Chrisuu!🎉</h1>
+            <p class="hero-subtitle">Let's celebrate this special day together!</p>
+            <div class="birthday-candles">
+                <div class="candle">
+                    <div class="flame"></div>
+                    <div class="wick"></div>
+                    <div class="wax"></div>
+                </div>
+                <div class="candle">
+                    <div class="flame"></div>
+                    <div class="wick"></div>
+                    <div class="wax"></div>
+                </div>
+                <div class="candle">
+                    <div class="flame"></div>
+                    <div class="wick"></div>
+                    <div class="wax"></div>
+                </div>
+            </div>
+            <button class="cta-button" id="celebrateBtn">Start the Celebration! 🎊</button>
+        </div>
+    </section>
+
+    <!-- Photo Gallery Section -->
+    <section id="gallery" class="gallery-section">
+        <div class="container">
+            <h2 class="section-title">📸 Memory Gallery</h2>
+            <div class="gallery-controls">
+                <button class="gallery-btn" id="gridViewBtn">Grid View</button>
+                <button class="gallery-btn" id="slideshowViewBtn">Slideshow</button>
+            </div>
+            
+            <!-- Grid View -->
+            <div class="gallery-grid" id="galleryGrid">
+                <div class="gallery-item" data-caption="Memory 1">
+                    <img src="photos/20250826_134034.jpg" alt="Us together">
+                    <div class="gallery-overlay">
+                        <h3>Our First Year Apart, Together</h3>
+                        <p>Even with miles between us, every day you still felt close to my heart.</p>
+                    </div>
+                </div>
+                <div class="gallery-item" data-caption="Memory 2">
+                    <img src="photos/20250826_160432.jpg" alt="Special moment">
+                    <div class="gallery-overlay">
+                        <h3>Calls That Felt Like Home</h3>
+                        <p>Late-night talks, sleepy voices, and laughter that made the distance disappear.</p>
+                    </div>
+                </div>
+                <div class="gallery-item" data-caption="Memory 3">
+                    <img src="photos/20251214_161254.jpg" alt="Smiles together">
+                    <div class="gallery-overlay">
+                        <h3>Smiles Saved in Screenshots</h3>
+                        <p>Every picture, every snap, a little reminder that we are worth every kilometer.</p>
+                    </div>
+                </div>
+                <div class="gallery-item" data-caption="Memory 4">
+                    <img src="photos/Snapchat-1771157167.jpg" alt="Cute moment">
+                    <div class="gallery-overlay">
+                        <h3>Missing You, Loving You</h3>
+                        <p>I missed your hugs, but never once doubted your heart holding mine.</p>
+                    </div>
+                </div>
+                <div class="gallery-item" data-caption="Memory 5">
+                    <img src="photos/Snapchat-219851431.jpg" alt="Goofy moment">
+                    <div class="gallery-overlay">
+                        <h3>Little Moments, Big Love</h3>
+                        <p>Random photos, silly faces, and inside jokes only we will ever understand.</p>
+                    </div>
+                </div>
+                <div class="gallery-item" data-caption="Memory 6">
+                    <img src="photos/Snapchat-705696411.jpg" alt="Together again">
+                    <div class="gallery-overlay">
+                        <h3>Worth Every Kilometer</h3>
+                        <p>One year of long distance, and I would choose you and us all over again.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slideshow View -->
+            <div class="gallery-slideshow" id="gallerySlideshow" style="display: none;">
+                <div class="slideshow-container">
+                    <div class="slide active">
+                        <img src="photos/20250826_134034.jpg" alt="Our memory 1">
+                        <div class="slide-caption">Our First Year Apart, Together - Distance couldn't stop our hearts from choosing each other every single day</div>
+                    </div>
+                    <div class="slide">
+                        <img src="photos/20250826_160432.jpg" alt="Our memory 2">
+                        <div class="slide-caption">Calls That Felt Like Home - Every goodnight call felt like you were right here beside me</div>
+                    </div>
+                    <div class="slide">
+                        <img src="photos/20251214_161254.jpg" alt="Our memory 3">
+                        <div class="slide-caption">One Year Strong - Our love grew not in the easy moments, but in every hard goodbye we survived</div>
+                    </div>
+                    <div class="slide">
+                        <img src="photos/Snapchat-1771157167.jpg" alt="Our memory 4">
+                        <div class="slide-caption">Counting Down the Days - Each sunrise brings me one day closer to holding you again</div>
+                    </div>
+                    <div class="slide">
+                        <img src="photos/Snapchat-219851431.jpg" alt="Our memory 5">
+                        <div class="slide-caption">Forever Isn't Long Enough - With you, a year felt like yesterday, and a lifetime wouldn't be enough</div>
+                    </div>
+                    <div class="slide">
+                        <img src="photos/Snapchat-705696411.jpg" alt="Our memory 6">
+                        <div class="slide-caption">Worth Every Kilometer - One year of long distance, and I would choose you and us all over again</div>
+                    </div>
+                </div>
+                <button class="slide-btn prev" id="prevSlideBtn">❮</button>
+                <button class="slide-btn next" id="nextSlideBtn">❯</button>
+                <div class="slide-indicators">
+                    <span class="indicator active" data-slide="0"></span>
+                    <span class="indicator" data-slide="1"></span>
+                    <span class="indicator" data-slide="2"></span>
+                    <span class="indicator" data-slide="3"></span>
+                    <span class="indicator" data-slide="4"></span>
+                    <span class="indicator" data-slide="5"></span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Music Section -->
+    <section id="music" class="music-section">
+        <div class="container">
+            <h2 class="section-title">🎵 Birthday Playlist</h2>
+            <div class="music-player">
+                <div class="player-display">
+                    <div class="album-art">
+                        <div class="vinyl-record" id="vinylRecord">
+                            <div class="vinyl-center"></div>
+                        </div>
+                    </div>
+                    <div class="track-info">
+                        <h3 id="trackTitle">Tu Jo Mila</h3>
+                        <p id="trackArtist">Pritam</p>
+                        <div class="progress-container">
+                            <div class="progress-bar" id="progressBar">
+                                <div class="progress" id="progress"></div>
+                            </div>
+                            <div class="time-display">
+                                <span id="currentTime">0:00</span>
+                                <span id="duration">2:30</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="player-controls">
+                    <button class="control-btn shuffle-btn" id="shuffleBtn" title="Shuffle">🔀</button>
+                    <button class="control-btn" id="prevTrackBtn">⏮️</button>
+                    <button class="control-btn play-pause-btn" id="playPauseBtn">▶️</button>
+                    <button class="control-btn" id="nextTrackBtn">⏭️</button>
+                    <button class="control-btn repeat-btn" id="repeatBtn" title="Repeat">🔁</button>
+                </div>
+
+                <div class="volume-control">
+                    <span>🔊</span>
+                    <input type="range" id="volumeSlider" min="0" max="100" value="50">
+                </div>
+
+                <div class="playlist">
+                    <h4>🎶 Playlist (4 songs)</h4>
+                    <div class="playlist-item active" data-track="0">
+                        <span>1. Tu Jo Mila - Pritam</span>
+                        <span>4:48</span>
+                    </div>
+                    <div class="playlist-item" data-track="1">
+                        <span>2. I Think They Call This Love - Matthew Ifield</span>
+                        <span>3:28</span>
+                    </div>
+                    <div class="playlist-item" data-track="2">
+                        <span>3. Photograph - Ed Sheeran</span>
+                        <span>4:19</span>
+                    </div>
+                    <div class="playlist-item" data-track="3">
+                        <span>4. Until I Found You - Stephen Sanchez</span>
+                        <span>2:55</span>
+                    </div>
+                </div>
+
+                <!-- Audio elements -->
+                <audio id="audioPlayer" preload="auto" muted>
+                    <source src="" type="audio/mpeg">
+                </audio>
+            </div>
+        </div>
+    </section>
+
+    <!-- Puzzle Game Section -->
+    <!-- Birthday Wishes Section -->
+    <section id="wishes" class="wishes-section">
+        <div class="container">
+            <h2 class="section-title">💌 Birthday Wishes</h2>
+            <div class="wishes-container">
+                <div class="wish-form">
+                    <h3>Leave a Birthday Wish</h3>
+                    <form id="wishForm">
+                        <input type="text" id="wishName" placeholder="Your Name" required>
+                        <textarea id="wishMessage" placeholder="Your birthday message..." rows="4" required></textarea>
+                        <button type="submit" class="wish-submit-btn">Send Wishes 💝</button>
+                    </form>
+                </div>
+                
+                <div class="wishes-display">
+                    <h3>All Wishes (🎁 <span id="wishCount">0</span>)</h3>
+                    <div id="wishesList" class="wishes-list">
+                        <!-- Wishes will be loaded here -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Countdown Section -->
+    <section id="countdown" class="countdown-section">
+        <div class="container">
+            <h2 class="section-title">⏰ Birthday Countdown</h2>
+            <div class="countdown-container">
+                <div class="countdown-input">
+                    <label for="birthdayDate">Set Your Birthday Date:</label>
+                    <input type="datetime-local" id="birthdayDate" value="2026-01-29T00:00">
+                </div>
+                
+                <div class="countdown-display" id="countdownDisplay">
+                    <div class="time-unit">
+                        <span class="time-number" id="days">00</span>
+                        <span class="time-label">Days</span>
+                    </div>
+                    <div class="time-unit">
+                        <span class="time-number" id="hours">00</span>
+                        <span class="time-label">Hours</span>
+                    </div>
+                    <div class="time-unit">
+                        <span class="time-number" id="minutes">00</span>
+                        <span class="time-label">Minutes</span>
+                    </div>
+                    <div class="time-unit">
+                        <span class="time-number" id="seconds">00</span>
+                        <span class="time-label">Seconds</span>
+                    </div>
+                </div>
+
+                <div class="countdown-message" id="countdownMessage">
+                    <p>Set your birthday date to start the countdown!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+</body>
+</html>
